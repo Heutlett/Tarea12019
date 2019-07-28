@@ -5,8 +5,7 @@
  */
 package sample;
 
-import com.csvreader.CsvReader;
-import com.csvreader.CsvWriter;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Alert;
@@ -18,7 +17,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Logger;
 
 public class LectorCSV {
 
@@ -47,9 +45,7 @@ public class LectorCSV {
                 Tabla record = new Tabla();
 
                 for(int i = 0; i < fields.length; i++){
-                    System.out.println(fields[i]);
                     record.setFNumber(i,fields[i]);
-
                 }
 
                 dataList.add(record);
