@@ -13,14 +13,10 @@
       <AnchorPane prefHeight="361.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label id="lbl1" layoutX="995.0" layoutY="550.0" prefHeight="31.0" prefWidth="41.0" text="Ruta:" />
-            <TableView prefHeight="705.0" prefWidth="957.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-              </columns>
-            </TableView>
-            <Button fx:id="btn1" layoutX="995.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#onExitButtonClicked" text="Seleccionar archivo" />
+            <TableView fx:id="tableView1" prefHeight="705.0" prefWidth="957.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="btn1" layoutX="995.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#seleccionarArchivo" text="Seleccionar archivo" />
             <Label fx:id="lbl1" layoutX="1051.0" layoutY="555.0" prefHeight="21.0" prefWidth="441.0" />
+            <Button layoutX="1373.0" layoutY="605.0" mnemonicParsing="false" onMouseClicked="#abrirArchivo" text="Abrir" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
